@@ -1,0 +1,140 @@
+# ============================================================
+# SENSITIVE / CREDENTIALS
+# ============================================================
+.env
+.env.local
+.env.*.local
+
+# ============================================================
+# GENERATED OUTPUTS
+# ============================================================
+# Debate transcripts and result files
+outputs/
+# Benchmark run data and auto-generated reports
+benchmarks/*.json
+benchmarks/BENCHMARK_REPORT.md
+# Any zip archives (e.g. evidence_collector.zip)
+*.zip
+
+# ============================================================
+# LOGS
+# ============================================================
+logs/
+*.log
+*.log.*
+
+# ============================================================
+# PYTHON
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Distribution / packaging
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.cache/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.pyre/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# pyenv / pipenv / poetry
+.python-version
+Pipfile.lock
+poetry.lock
+
+# ============================================================
+# VIRTUAL ENVIRONMENTS
+# ============================================================
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ============================================================
+# IDE & EDITORS
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.orig
+
+# ============================================================
+# OS FILES
+# ============================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encData
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+# ============================================================
+# PROJECT-SPECIFIC: SETUP / TEST / SCRATCH SCRIPTS
+# ============================================================
+# Connection & key verification scripts (not part of core system)
+test_groq.py
+test_key_rotation.py
+test_simple_api.py
+# Quick-launch utility (not needed in repo; use benchmarking.py directly)
+run_quick_benchmark.py
+# Old / backup server file
+api_server_old.py
+
+# ============================================================
+# MISC
+# ============================================================
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp

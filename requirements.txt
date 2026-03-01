@@ -1,0 +1,12 @@
+openai
+anthropic
+groq
+google-genai
+ddgs
+beautifulsoup4
+requests
+python-dotenv
+playwright
+fastapi
+uvicorn
+pydantic
