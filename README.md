@@ -39,8 +39,7 @@ This is not a summarizer. It is a **reasoning stress-test pipeline**.
    # Edit .env with your Groq API key
    ```
    
-   Get your free Groq API key at [console.groq.com](https://console.groq.com)  
-   See [GROQ_SETUP.md](GROQ_SETUP.md) for detailed setup instructions.
+   Get your free Groq API key at [console.groq.com](https://console.groq.com)
 
 3. **Run the system:**
    
@@ -48,6 +47,14 @@ This is not a summarizer. It is a **reasoning stress-test pipeline**.
    ```bash
    python main.py input_report.txt
    ```
+   
+   **Example input** (`input_report.txt`):
+   ```
+   We propose expanding into the European market in Q3 2026.
+   Key factors: regulatory compliance, local partnerships, and pricing strategy.
+   ```
+   
+   **Output:** `outputs/debate_<timestamp>.txt` containing the full debate transcript and final verdict.
    
    **Option B - API Server (for frontend integration):**
    ```bash
@@ -141,6 +148,8 @@ Final Transparent Report
 
 ## Benchmarks & Performance
 
+> **⚠️ Note:** The metrics below are **preliminary/projected** based on internal testing. Full benchmark dataset and reproducibility scripts planned for Q2 2026 public release. Third-party validation pending.
+
 ### Model Specifications
 
 | Component    | Model                        | Size   | Provider  |
@@ -166,8 +175,6 @@ Final Transparent Report
 - Agreement Rate: % of identical verdicts across runs
 - Flip Rate: % of verdicts that changed when re-run
 - Human baseline: 3 domain experts, majority vote
-
-> **Note:** These are projected metrics based on internal testing. Full benchmark dataset and reproducibility scripts planned for Q2 2026 public release. Third-party validation pending.
 
 ### Accuracy Benchmarks
 
@@ -269,5 +276,3 @@ Final Transparent Report
 ## License
 
 MIT
- 
- 
